@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contact = htmlspecialchars($_POST["contact"]);
     $time = htmlspecialchars($_POST["time"]);
 
-    $to = "dontinah33@gmail.com"; // Replace with your clinic email
+    $to = "donamon161@gmail.com"; // Replace with your clinic email
     $subject = "Prescription Review Request";
     $body = "Name: $name\nPhone: $phone\nMessage: $message\nPreferred Contact: $contact\nBest Time: $time";
     $headers = "From: noreply@yourdomain.com";
