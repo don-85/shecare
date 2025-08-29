@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serene Women's Health | Dubai</title>
+  <meta name="description" content="Serene Women's Health — compassionate, confidential women's wellness and reproductive health counseling in Dubai. Evidence-based care within UAE laws." />
+
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    :root{
+      --brand:#7c4dff;           /* deep lavender */
+      --brand-2:#ff6fa5;         /* soft pink */
+      --ink:#213547;             /* body text */
+      --muted:#6b7a8c;           /* muted text */
+      --bg:#f9fafc;              /* page bg */
+      --card:#ffffff;            /* card bg */
+      --success:#10b981;         /* emerald */
+    }
+    html{ scroll-behavior:smooth; }
+    body{ font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Noto Sans,Arial,"Apple Color Emoji","Segoe UI Emoji"; color:var(--ink); background:var(--bg); }
+
+    /* Navbar */
+    .navbar{ backdrop-filter:saturate(180%) blur(8px); background:rgba(255,255,255,.7)!important; }
+    .navbar .nav-link{ font-weight:600; }
+    .btn-brand{ background:var(--brand); color:#fff; border:none; }
+    .btn-brand:hover{ background:#6d43e3; color:#fff; }
+    .btn-outline-brand{ border-color:var(--brand); color:var(--brand); }
+    .btn-outline-brand:hover{ background:var(--brand); color:#fff; }
+
+    /* Hero */
+    .hero{ position:relative; overflow:hidden; }
+    .hero .blob{
+      position:absolute; filter:blur(40px); opacity:.35; z-index:0; border-radius:50%; animation:float 12s ease-in-out infinite;
+    }
+    .blob.one{ width:520px; height:520px; background:radial-gradient(circle at 30% 30%, var(--brand), transparent 70%); top:-100px; left:-120px; }
+    .blob.two{ width:420px; height:420px; background:radial-gradient(circle at 60% 60%, var(--brand-2), transparent 70%); bottom:-140px; right:-80px; animation-duration:14s; }
+    @keyframes float{ 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-16px) } }
+    .hero-illustration{ position:relative; z-index:1; }
+
+    /* Cards */
+    .card-rounded{ border:0; border-radius:1.25rem; background:var(--card); box-shadow:0 10px 30px rgba(33,53,71,.07); }
+
+    /* Section spacing */
+    .section{ padding:72px 0; }
+
+    /* Feature icons */
+    .feature-icon{ width:44px; height:44px; display:grid; place-items:center; border-radius:12px; background:linear-gradient(135deg,var(--brand),var(--brand-2)); color:#fff; }
+
+    /* Team */
+    .team-img{ width:84px; height:84px; border-radius:50%; object-fit:cover; box-shadow:0 8px 24px rgba(124,77,255,.25); }
+
+    /* Timeline (About) */
+    .dot{ width:10px; height:10px; border-radius:50%; background:var(--brand); display:inline-block; }
+
+    /* WhatsApp Floating Button */
+    .wa-fab{
+      position:fixed; right:18px; bottom:18px; z-index:1040; border-radius:999px; padding:.85rem 1rem; display:flex; align-items:center; gap:.5rem; box-shadow:0 10px 24px rgba(37,211,102,.35);
+      background:#25d366; color:#fff; font-weight:700; }
+    .wa-fab:hover{ color:#fff; background:#20bd5a; }
+
+    /* Footer */
+    .footer{ background:#0f172a; color:#cbd5e1; }
+    .footer a{ color:#e2e8f0; text-decoration:none; }
+    .footer a:hover{ text-decoration:underline; }
+
+    /* Utilities */
+    .small-muted{ color:var(--muted); font-size:.95rem; }
+    .badge-soft{ background:rgba(124,77,255,.08); color:var(--brand); border:1px solid rgba(124,77,255,.18); }
+
+    /* Responsive tweaks */
+    @media (max-width: 991.98px){
+      .display-5{ font-size:2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home" aria-label="Serene Women's Health">
+        <i class="bi bi-heart-pulse-fill me-2 text-danger"></i>SheCare <span class="text-secondary">Women's Health</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prescription">Prescription</a></li>
+          <li class="nav-item"><a class="nav-link" href="#careteam">Care Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item ms-lg-3"><a href="#contact" class="btn btn-brand btn-sm rounded-pill px-3"><i class="bi bi-calendar2-week me-1"></i>Book a Call</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME / HERO -->
+  <header id="home" class="hero section bg-white">
+    <div class="blob one"></div>
+    <div class="blob two"></div>
+
+    <div class="container position-relative hero-illustration">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge badge-soft rounded-pill">Confidential • Compassionate • Professional</span>
+          <h1 class="display-5 fw-bold mt-3">Women's Wellness & Reproductive Health in Dubai</h1>
+          <p class="lead small-muted">Evidence-based care, clear guidance, and supportive counseling delivered by licensed clinicians — strictly within UAE laws and clinical ethics.</p>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+          <!-- Request a Callback (phone call) -->
+<a href="tel:+447463010235" class="btn btn-brand btn-lg rounded-pill px-4">
+  <i class="bi bi-telephone-outbound me-1"></i>Request a Callback
+</a>
+
+<!-- WhatsApp Chat -->
+<a href="https://api.whatsapp.com/send?phone=447463010235&text=Hello%20Serene%20Women's%20Health%2C%20I%20would%20like%20to%20chat."
+   class="btn btn-success btn-lg rounded-pill px-4" target="_blank" rel="noopener">
+  <i class="bi bi-whatsapp me-1"></i>Chat on WhatsApp
+</a>
+
+          </div>
+
+          <div class="row text-center g-3 mt-4">
+            <div class="col-4">
+              <div class="p-3 card-rounded">
+                <div class="fw-bold fs-4" data-counter="12000">0</div>
+                <div class="small-muted">Patient interactions</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 card-rounded">
+                <div class="fw-bold fs-4" data-counter="24">0</div>
+                <div class="small-muted">hrs chat support</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 card-rounded">
+                <div class="fw-bold fs-4" data-counter="15">0</div>
+                <div class="small-muted">yrs experience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card card-rounded p-3 p-lg-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+              <div><h5 class="mb-1">Your privacy is our priority</h5><div class="small-muted">All consultations are confidential and handled by licensed clinicians.</div></div>
+            </div>
+
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex gap-3 align-items-start py-2"><i class="bi bi-dot fs-3 text-primary"></i>
+                <div><strong>Services:</strong> General gynecology, fertility counseling, prenatal care, menstrual & PCOS care, infections & STI screening, mental health support.
+                </div></li>
+              <li class="d-flex gap-3 align-items-start py-2"><i class="bi bi-dot fs-3 text-primary"></i>
+                <div><strong>Reproductive Health Counseling:</strong> Clear, judgment‑free guidance to understand options and risks; care provided strictly within UAE regulations.
+                </div></li>
+              <li class="d-flex gap-3 align-items-start py-2"><i class="bi bi-dot fs-3 text-primary"></i>
+                <div><strong>Emergency:</strong> If you are in immediate danger or experiencing heavy bleeding, go to the nearest emergency department or call local emergency services.</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRESCRIPTION -->
+  <section id="prescription" class="section">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="badge badge-soft rounded-pill">Prescription Services</span>
+        <h2 class="fw-bold mt-2">Medication Refills & Rx Support</h2>
+        <p class="small-muted">We verify and manage prescriptions appropriate to women's health (e.g., prenatal vitamins, iron supplements, infections, hormonal therapies) following UAE laws and clinical indications. We do not provide any services that are illegal in the UAE.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-rounded h-100 p-3">
+            <div class="d-flex gap-3">
+              <div class="feature-icon"><i class="bi bi-capsule"></i></div>
+              <div>
+                <h5 class="mb-1">Refill & Renewal</h5>
+                <p class="small-muted mb-2">Bring your previous prescription; our clinicians will review your health status before renewal.</p>
+                <span class="badge text-bg-light border">ID required</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-rounded h-100 p-3">
+            <div class="d-flex gap-3">
+              <div class="feature-icon"><i class="bi bi-clipboard2-pulse"></i></div>
+              <div>
+                <h5 class="mb-1">Rx Consultation</h5>
+                <p class="small-muted mb-2">Discuss symptoms and treatment options in a confidential consult. Lab tests arranged as needed.</p>
+                <span class="badge text-bg-light border">Telehealth available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-rounded h-100 p-3">
+            <div class="d-flex gap-3">
+              <div class="feature-icon"><i class="bi bi-truck"></i></div>
+              <div>
+                <h5 class="mb-1">Pharmacy Coordination</h5>
+                <p class="small-muted mb-2">We can forward approved prescriptions to your preferred licensed pharmacy.</p>
+                <span class="badge text-bg-light border">Dubai & UAE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Request Form -->
+      <div class="card card-rounded mt-4 p-4">
+        <h5 class="mb-3"><i class="bi bi-envelope-paper me-2"></i>Request a Prescription Review</h5>
+       <form id="rxForm" action="rx-handler.php" method="POST" class="row g-3">
+
+          <div class="col-md-6">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" name="name" required />
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Phone (WhatsApp)</label>
+            <input type="tel" class="form-control" name="phone" required />
+            <div class="invalid-feedback">Please enter a phone number.</div>
+          </div>
+          <div class="col-12">
+            <label class="form-label">What do you need help with?</label>
+            <textarea class="form-control" name="message" rows="4" placeholder="Describe your concern…" required></textarea>
+            <div class="invalid-feedback">Please add a short message.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Preferred Contact Method</label>
+            <select class="form-select" name="contact">
+              <option>WhatsApp</option>
+              <option>Phone Call</option>
+              <option>Email</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Best Time</label>
+            <select class="form-select" name="time">
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+            </select>
+          </div>
+          <div class="col-12 d-flex gap-2">
+            <button class="btn btn-brand" type="submit"><i class="bi bi-send me-1"></i>Submit</button>
+            <button class="btn btn-outline-brand" type="reset"><i class="bi bi-arrow-counterclockwise me-1"></i>Reset</button>
+          </div>
+          <div id="rxAlert" class="alert alert-success d-none mt-2" role="alert">
+            Thank you. We will review and contact you shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARE TEAM -->
+  <section id="careteam" class="section bg-white">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="badge badge-soft rounded-pill">Meet the Team</span>
+        <h2 class="fw-bold mt-2">Compassionate Clinicians</h2>
+        <p class="small-muted">Our multidisciplinary team brings decades of experience in gynecology, family medicine, counseling, and nursing.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Team Member 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-rounded h-100 p-3 text-center">
+            <img class="team-img mx-auto" src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><rect width='100%' height='100%' fill='%23f3e8ff'/><circle cx='80' cy='70' r='38' fill='%237c4dff'/><rect x='45' y='112' rx='18' ry='18' width='70' height='32' fill='%23c4b5fd'/></svg>" alt="Dr. Aisha portrait" />
+            <h6 class="mt-3 mb-0">Dr. Aisha Kareem</h6>
+            <div class="small-muted">Consultant OB‑GYN</div>
+            <div class="mt-2">
+              <span class="badge text-bg-light border me-1">MBBS</span>
+              <span class="badge text-bg-light border me-1">MRCOG</span>
+              <span class="badge text-bg-light border">15 yrs</span>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-rounded h-100 p-3 text-center">
+            <img class="team-img mx-auto" src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><rect width='100%' height='100%' fill='%23e6fffa'/><circle cx='80' cy='70' r='38' fill='%2310b981'/><rect x='45' y='112' rx='18' ry='18' width='70' height='32' fill='%23a7f3d0'/></svg>" alt="Nurse Fatima portrait" />
+            <h6 class="mt-3 mb-0">Nurse Fatima</h6>
+            <div class="small-muted">Women's Health Nurse</div>
+            <div class="mt-2">
+              <span class="badge text-bg-light border me-1">RN</span>
+              <span class="badge text-bg-light border me-1">BLS</span>
+              <span class="badge text-bg-light border">8 yrs</span>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-rounded h-100 p-3 text-center">
+            <img class="team-img mx-auto" src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><rect width='100%' height='100%' fill='%23fff7ed'/><circle cx='80' cy='70' r='38' fill='%23f59e0b'/><rect x='45' y='112' rx='18' ry='18' width='70' height='32' fill='%23fde68a'/></svg>" alt="Counselor Maya portrait" />
+            <h6 class="mt-3 mb-0">Maya Al‑Sayegh</h6>
+            <div class="small-muted">Counselor</div>
+            <div class="mt-2">
+              <span class="badge text-bg-light border me-1">MSc Psych</span>
+              <span class="badge text-bg-light border me-1">Trauma‑informed</span>
+              <span class="badge text-bg-light border">Arabic • English</span>
+            </div>
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-rounded h-100 p-3 text-center">
+            <img class="team-img mx-auto" src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><rect width='100%' height='100%' fill='%23eef2ff'/><circle cx='80' cy='70' r='38' fill='%23636ae6'/><rect x='45' y='112' rx='18' ry='18' width='70' height='32' fill='%23c7d2fe'/></svg>" alt="Dr. Noor portrait" />
+            <h6 class="mt-3 mb-0">Dr. Noor Rahman</h6>
+            <div class="small-muted">Family Physician</div>
+            <div class="mt-2">
+              <span class="badge text-bg-light border me-1">MBBS</span>
+              <span class="badge text-bg-light border me-1">DFSRH</span>
+              <span class="badge text-bg-light border">10 yrs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials Carousel -->
+      <div id="testi" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card card-rounded p-4">
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-chat-heart fs-3 text-danger"></i>
+                <div>
+                  <p class="mb-1">“The team listened with kindness and explained every step. I felt safe and respected.”</p>
+                  <div class="small-muted">— S.A., Dubai</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card card-rounded p-4">
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-chat-heart fs-3 text-danger"></i>
+                <div>
+                  <p class="mb-1">“Fast response on WhatsApp and professional follow‑up. Highly recommend.”</p>
+                  <div class="small-muted">— N.H., Sharjah</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card card-rounded p-4">
+              <div class="d-flex gap-3 align-items-start">
+                <i class="bi bi-chat-heart fs-3 text-danger"></i>
+                <div>
+                  <p class="mb-1">“Clear, evidence‑based guidance in Arabic and English. Thank you!”</p>
+                  <div class="small-muted">— R.K., Abu Dhabi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testi" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testi" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <span class="badge badge-soft rounded-pill">About Us</span>
+          <h2 class="fw-bold mt-2">Our Commitment to Safe, Lawful, Patient‑Centered Care</h2>
+          <p class="small-muted">Serene Women’s Health is a Dubai‑based clinic providing women’s wellness and reproductive health counseling. We operate strictly within UAE laws, offering education, prevention, prenatal and gynecologic care, and referrals to licensed services when appropriate.</p>
+          <ul class="list-unstyled">
+            <li class="d-flex gap-3 py-1"><span class="dot mt-2"></span><div><strong>Privacy:</strong> Discreet, confidential consultations. Your information is protected.</div></li>
+            <li class="d-flex gap-3 py-1"><span class="dot mt-2"></span><div><strong>Access:</strong> In‑person and telehealth options with Arabic and English support.</div></li>
+            <li class="d-flex gap-3 py-1"><span class="dot mt-2"></span><div><strong>Quality:</strong> Evidence‑based protocols, continuous training, and peer review.</div></li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-rounded p-4">
+            <h6 class="mb-2"><i class="bi bi-geo-alt me-2"></i>Clinic Info</h6>
+            <div class="row g-3">
+              <div class="col-6"><div class="small-muted">Location</div><div><strong>Dubai, UAE</strong></div></div>
+              <div class="col-6"><div class="small-muted">Hours</div><div><strong>Sun–Thu 9:00–18:00</strong></div></div>
+              <!-- <div class="col-6"><div class="small-muted">Phone</div><div><strong id="clinicPhone">+971 50 000 0000</strong></div></div> -->
+              <div class="col-6"><div class="small-muted">Languages</div><div><strong>Arabic • English</strong></div></div>
+            </div>
+            <div class="ratio ratio-16x9 mt-3">
+              <!-- Lightweight illustrated map placeholder -->
+              <iframe title="Map" srcdoc="<!DOCTYPE html><html><body style='margin:0;font-family:sans-serif;background:#eef2ff;display:grid;place-items:center;'><div style='text-align:center;color:#374151'><div style='font-weight:700;margin-bottom:.25rem'>Dubai • UAE</div><div style='font-size:12px'>Embed your map here</div></div></body></html>"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-warning mt-4" role="alert">
+        <strong>Important:</strong> We do not provide services that are illegal in the UAE. If you have questions about your health, we will discuss legal, safe options and refer you appropriately.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section id="contact" class="section bg-white">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h3 class="fw-bold">Talk to a clinician — privately</h3>
+          <p class="small-muted">Send us a WhatsApp message or request a callback. We usually reply within a few hours.</p>
+
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <a id="ctaWA" class="btn btn-success btn-lg rounded-pill px-4" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>WhatsApp Us</a>
+            <a href="tel:+447463010235" class="btn btn-outline-brand btn-lg rounded-pill px-4"><i class="bi bi-telephone me-1"></i>Call Clinic</a>
+          </div>
+
+          <ul class="small-muted mb-0">
+            <li>Responses 9:00–18:00 Gulf Standard Time; limited weekend coverage.</li>
+            <li>For emergencies (severe pain, heavy bleeding, fainting), go to the nearest emergency department.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-rounded p-4">
+            <h6 class="mb-3"><i class="bi bi-lock me-2"></i>Quick Contact (Private)</h6>
+            <form id="contactForm" novalidate class="row g-3">
+              <div class="col-md-6"><label class="form-label">First Name</label><input class="form-control" name="first" required /><div class="invalid-feedback">Required</div></div>
+              <div class="col-md-6"><label class="form-label">Last Name</label><input class="form-control" name="last" required /><div class="invalid-feedback">Required</div></div>
+              <div class="col-md-6"><label class="form-label">Email</label><input type="email" class="form-control" name="email" required /><div class="invalid-feedback">Valid email required</div></div>
+              <div class="col-md-6"><label class="form-label">WhatsApp</label><input type="tel" class="form-control" name="wap" placeholder="e.g., +9715xxxxxxx" required /><div class="invalid-feedback">WhatsApp number required</div></div>
+              <div class="col-12"><label class="form-label">Message</label><textarea class="form-control" name="msg" rows="4" required placeholder="How can we help?"></textarea><div class="invalid-feedback">Please write a short message</div></div>
+              <div class="col-12 d-flex gap-2">
+                <button class="btn btn-brand" type="submit"><i class="bi bi-send me-1"></i>Send</button>
+                <button class="btn btn-outline-brand" type="reset">Clear</button>
+              </div>
+              <div id="contactAlert" class="alert alert-success d-none mt-2" role="alert">Thanks! We'll get back to you shortly.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <h5 class="text-white">SheCare Women's Health</h5>
+          <p class="mt-2">Compassionate women's healthcare and reproductive health counseling in Dubai. Care provided strictly within UAE laws and clinical ethics.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-sm btn-light" href="#home" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+            <a class="btn btn-sm btn-light" id="footerWA" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h6 class="text-white">Patient Resources</h6>
+          <ul class="list-unstyled mt-2 small">
+            <li><a href="#prescription">Prescriptions & Refills</a></li>
+            <li><a href="#careteam">Meet the Care Team</a></li>
+            <li><a href="#about">Clinic Information</a></li>
+            <li><a href="#contact">Contact & WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h6 class="text-white">Disclaimer</h6>
+          <p class="small">Information on this site is educational and not a substitute for a clinician’s advice. In emergencies, go to the nearest emergency department. We do not provide any services that are illegal in the UAE.</p>
+        </div>
+      </div>
+      <hr class="border-secondary" />
+      <div class="d-flex flex-wrap justify-content-between small">
+        <div>© <span id="year"></span> SheCare Women's Health. All rights reserved.</div>
+        <div>Privacy • Terms</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp FAB -->
+  <a id="waFab" class="wa-fab" target="_blank" rel="noopener" aria-label="WhatsApp chat">
+    <i class="bi bi-whatsapp"></i> <span class="d-none d-sm-inline">WhatsApp</span>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // ======= Replace with your actual WhatsApp number in international format (no spaces) =======
+    const WHATSAPP_NUMBER = "+447463010235"; // e.g., +9715XXXXXXXX
+
+    // Build WhatsApp links with a default message
+    const defaultMsg = encodeURIComponent("Hello Serene Women's Health, I would like to chat confidentially.");
+    const waLink = `https://api.whatsapp.com/send?phone=${encodeURIComponent(WHATSAPP_NUMBER)}&text=${defaultMsg}`;
+
+    // Apply links
+    const waTargets = [document.getElementById('heroWA'), document.getElementById('ctaWA'), document.getElementById('footerWA'), document.getElementById('waFab')];
+    waTargets.forEach(el => { if (el) { el.href = waLink; } });
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Animate counters
+    const counters = document.querySelectorAll('[data-counter]');
+    const animateCounter = (el) => {
+      const target = +el.getAttribute('data-counter');
+      const duration = 1600; // ms
+      const start = performance.now();
+      const step = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        const val = Math.floor(p * target);
+        el.textContent = val.toLocaleString();
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ animateCounter(e.target); observer.unobserve(e.target);} });
+    }, { threshold: .6 });
+    counters.forEach(c=>observer.observe(c));
+
+    // Forms: client-side validation + demo success message
+    const handleForm = (formId, alertId) => {
+      const form = document.getElementById(formId);
+      const alert = document.getElementById(alertId);
+      if(!form) return;
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        if(!form.checkValidity()){
+          e.stopPropagation();
+          form.classList.add('was-validated');
+          return;
+        }
+        // In production, send data via fetch() to your backend
+        alert.classList.remove('d-none');
+        form.reset();
+        form.classList.remove('was-validated');
+      });
+    };
+    handleForm('rxForm','rxAlert');
+    handleForm('contactForm','contactAlert');
+
+    // Highlight active nav on scroll
+    const sections = ['home','prescription','careteam','about'];
+    const navLinks = sections.map(id => ({ id, el: document.querySelector(`.nav-link[href="#${id}"]`) }));
+    const onScroll = () => {
+      let pos = window.scrollY + 120;
+      sections.forEach(id => {
+        const sec = document.getElementById(id);
+        if(!sec) return;
+        if(pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight){
+          navLinks.forEach(n => n.el && n.el.classList.remove('active'));
+          const cur = navLinks.find(n => n.id === id);
+          cur && cur.el && cur.el.classList.add('active');
+        }
+      });
+    };
+    document.addEventListener('scroll', onScroll);
+    onScroll();
+  </script>
+</body>
+</html>
